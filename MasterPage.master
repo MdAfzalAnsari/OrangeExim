@@ -1,0 +1,346 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"  %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<title>Orange Exim Pvt Ltd</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/Style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/Media.css" type="text/css" />    
+    <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+    <link href="css/generic.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />        
+    <script src="js/modernizr.custom.17475.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.min1.8.js"></script>    
+    <script type="text/javascript" src="js/indexj.js"></script>
+    <script type="text/javascript" src="js/ddsmoothmenu.js"></script>     
+    <script type="text/JavaScript" src="js/slimbox2.js"></script> 
+    <script type="text/JavaScript" src="js/fancybox.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/fancybox.css" />      
+    <script type="text/javascript" src="js/jquery.purr.js"></script>  
+    <script type="text/JavaScript" src="js/jquery.colorbox.js"></script>     
+    <script language="javascript" type="text/javascript">
+
+        $(document).ready(function () {
+            $(".carthead").click(function () {
+                $("#cartlayer").slideToggle("slow");                
+            });
+        });
+    </script> 
+    <script language="javascript" type="text/javascript">
+//        $(".fancybox").fancybox({
+//            openEffect: 'none',
+//            closeEffect: 'none',
+//            afterLoad: function () {
+//                this.inner.prepend('<h1 class="Boxcarthead">Cart</h1>');
+//                this.content = this.content.html();
+//            }
+//                });
+    </script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $("#bushowcarttton").click(function () {
+                
+                $("#cartlayer").fadeToggle("slow");
+                
+            });
+        });
+	</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.show-example').click(function () {
+                var notice = '<div class="notice">'
+								  + '<div class="notice-body">'								  									  
+								  + '<p>Product added to cart Successfully</p>'
+								  + '</div>'
+								  + '<div class="notice-bottom">'
+								  + '</div>'
+							  + '</div>';
+
+                $(notice).purr(
+							{
+							    usingTransparentPNG: true
+							}
+						);
+
+                return false;
+            }
+				);
+
+//            $('.show-sticky').click(function () {
+//                var notice = '<div class="notice">'
+//								  + '<div class="notice-body">'
+//									  + '<img src="./purr-example/info.png" alt="" />'
+//									  + '<h3>"Sticky" Purr Example</h3>'
+//									  + '<p>This a "sticky" Purr. It will not fade out on its own. You must close it manually.</p>'
+//								  + '</div>'
+//								  + '<div class="notice-bottom">'
+//								  + '</div>'
+//							  + '</div>';
+
+//                $(notice).purr(
+//							{
+//							    usingTransparentPNG: true,
+//							    isSticky: true
+//							}
+//						);
+
+//                return false;
+//            }
+//				);
+       }
+);
+   	</script>
+    <script language="javascript" type="text/javascript">
+        ddsmoothmenu.init({
+	        mainmenuid: "templatemo_menu", //menu DIV id
+	        orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	        classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	        //customtheme: ["#1c5a80", "#18374a"],
+	        contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+        })
+
+        function clearText(field)
+        {
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+        }
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    <title>Orange Exim Pvt Ltd</title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        
+        <form id="subscribedata" runat="server" method="post">       
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"/>                    
+        <div id="templatemo_wrapper">    
+        <div class="clear h20"></div>
+        <div class="clear h20"></div>         
+            <div id="templatemo_header">
+            
+            <div id="Logo" runat="server"><%--<img src="images/OrangeExim.jpg" alt="" title="" />--%></div>
+            <div id="h11">	
+                <div class="clear h20"></div>        
+                <div class="clear h20"></div> 
+                <div class="clear h20"></div>               
+                
+                <span><strong><img class="email" src="images/kcall.png">Phone :</strong></span>
+                        <strong><asp:Label ID="phone" runat="server" Text="Label"/><br/></strong>
+                <span><strong><img class="email" src="images/mobile.png">Mobile :</strong></span><strong><asp:Label ID="mobile" runat="server" Text="Label"/><br/></strong>
+                <span><strong><img class="email" src="images/mail.png">Email&nbsp;&nbsp;:</strong></span>
+                <strong><a class="hmail" href="" runat="server" id="adminemail"><asp:Label ID="email" runat="server" Text="Label"/></a></strong>                      
+            </div> 
+            <% 
+                if (Session["cust_user"] != null)
+               {%> 
+                    <div id="userinfo"><p id="username" runat="server" class="user"> Welcome <%= Session["cust_user"].ToString() %></p></div> 
+            
+                <% }%>
+        </div>
+        <div class="comboNav comb">
+    	<ul>
+            <dl><a href="Default.aspx" class="res">Home</a></dl>
+			<dl><a href="about.aspx" class="res">About</a></dl>
+            <dl><a href="" class="res">Products</a>
+                 <ul id="category1" runat="server">
+                   <%--<li><a href="" class="res"></a></li>--%>
+                    <%--<li><a href="industrial1.aspx" class="res">Industrial R.O System</a></li>
+                    <li><a href="Appliances.aspx" class="res">Appliances</a></li>
+                    <li><a href="Parts.aspx" class="res">Parts</a></li>              --%>
+              	</ul>
+            </dl>            
+            <dl><a href="contact.aspx" class="res">Contact</a></dl>
+        </ul>
+        <br style="clear: left" />
+       </div> 
+        <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="Default.aspx" class="res">Home</a></li>
+            <li><a href="about.aspx" class="res">About</a></li>
+            <li><a href="" class="res">Products</a>
+                <ul id="category" runat="server">
+                   <%--<li><a href="" class="res"></a></li>--%>
+                    <%--<li><a href="industrial1.aspx" class="res">Industrial R.O System</a></li>
+                    <li><a href="Appliances.aspx" class="res">Appliances</a></li>
+                    <li><a href="Parts.aspx" class="res">Parts</a></li>              --%>
+              	</ul>
+            </li>            
+            <li><a href="contact.aspx" class="res">Contact</a></li>
+            <% if(Session["cust_user"]==null){%>
+            <li><a href="login.aspx" class="res">LogIn</a></li>
+            <li><a href="Registration_detail.aspx" class="res">Register</a></li>
+            <%}else{ %>
+            <li><a href="logout.aspx" class="res">Logout</a></li>
+            <% }%>
+            
+        </ul>
+        <br style="clear: left" />
+        </div>
+        <div class="minimenu"><div class="menu">MENU</div>
+			    <select onchange="location=this.value">
+				    <option></option>
+				    <option value="Default.aspx">Home</option>
+                    <option value="about.aspx">About</option>
+                    <option value="gallery.aspx">Domestic Appliances</option>
+				    <option value="industrial1.aspx">Industrial Appliances</option>
+				    <option value="Appliances.aspx">Home Appliances</option>
+				    <option value="Parts.aspx">Parts</option>
+				    <option value="contact.aspx">Contact</option>
+			    </select>
+	    </div>
+        <%--<li><a class="show-example" href="#show">Regular</a></li>
+			<li><a class="show-sticky" href="#show">Sticky</a></li>--%>
+                   
+                        
+        
+        <%--<% 
+                if (Session["cust_user"] != null)
+               {%>    --%>     
+        <div class="mycart" id="cartdetails" runat="server"> <%--href="#cartlayer"--%>           
+                <div class="cartimg"><%--<img alt="" src="images/cart.png" class="cart"/>--%><p class='carthead fancybox' >View Shopping Cart</p><%--<p class="" id="bushowcarttton">Cart</p>--%></div>
+                
+                <div id="cartlayer" runat="server">
+                    <div class="carthover"><ul class="tablehead"><li class="">Item</li><li class="">Qty</li><li class="">Price</li><li class="delete" style="">Remove</li></ul></div>
+                    
+                    <div id="Mycart2" runat="server"><%--<%= bindc() %>--%>
+                    
+                    
+                         
+                    <asp:UpdatePanel ID="Mycart3" runat="server" UpdateMode="Conditional">
+                    <%--<ContentTemplate>
+                    <%--<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="savebtn"/>
+                    </ContentTemplate>        --%>                                    
+                    </asp:UpdatePanel>
+                    </div>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>        
+                    <div class="totalclass" id="totalclasses" runat="server">Total</div><div class="totalprice" id="totalprice" runat="server"></div>
+                    </ContentTemplate>                                            
+                    </asp:UpdatePanel>
+                    <asp:UpdateProgress ID="Updatingcart" runat="server">
+                            <ProgressTemplate>
+                                <asp:Image ID="Image2" runat="server" class=""  ImageUrl="images/loading.gif"/>
+                            </ProgressTemplate>
+                    </asp:UpdateProgress>
+                    <div class="cartbutton" id="c_button" runat="server">
+                    
+                            <asp:HyperLink ID="checkoutlink" runat="server" NavigateUrl="checkout.aspx">
+                                <asp:Image ID="checkoutbutton" runat="server" ImageUrl="images/checkoutButton.png" CssClass="checkoutimage"/> 
+                            </asp:HyperLink>
+                    
+                    </div>
+                    
+                                           
+                    
+               </div>
+               
+               
+               
+        </div>
+       <%-- <% }%>   --%>
+       
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+     
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+        <%--<form id="subscribedata" runat="server" method="post">--%>
+        <div id="templatemo_bottom_wrapper">
+	            <div id="templatemo_bottom">
+                <div class="footerwidget">
+	            <div class="widget">
+		              <div class="border-thin">&nbsp</div>
+		              <div class="cat"><h3><span class="dhead">Download Catalogue</span></h3></div>
+		              <ul class="sidebar_post">			
+			              <div class="img" id="imagelink" runat="server"> <%--<a href="files/file_5575_finalcateloguewithbackground.pdf" target="_blank">
+                          <img class="catalogimage" alt="" src="images/catalog.jpg"/></a>--%> </div>
+			              <div class="download_image" id="cataloglayer" runat="server">
+				            
+<%--				            <a href="files/file_5575_finalcateloguewithbackground.pdf" target="_blank" class="post-link">Download</a> 
+--%>		              </div>
+			              <div class="clearfix"></div>
+            			
+		              </ul>
+	            </div>
+            	
+
+	            <div class="widget">
+	             <div class="border-thin">&nbsp</div>
+		             <div class="cat"><h3><span class="dhead">Join Our Newsletter</span></h3></div>
+                     <div class="widgetbar">
+                          <p class="new">Sign Up to receive latest News and Events .We Will be happy to inform you regarding
+                          our future aspects </p>
+                          <div class="formm">                             
+                            <div class="tp"><span class="enter">Enter Your Email :</span>
+                                <asp:TextBox  ID="emailidsub" runat="server" placeholder="Enter A Valid Email" ValidationGroup="subscribe"></asp:TextBox>
+                                <asp:RequiredFieldValidator CssClass="subscibevalidate" ID="Required" runat="server" ErrorMessage="*" ControlToValidate="emailidsub" ValidationGroup="subscribe"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator CssClass="subscibevalidate" ID="Regular" runat="server" ErrorMessage="Invalid Email ID" ControlToValidate="emailidsub"
+                                ValidationExpression="^([a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]){1,70}$" ValidationGroup="subscribe"></asp:RegularExpressionValidator>
+                            <%--<input type="text" placeholder="Enter A Valid Email"  name="email" runat="server" validationgroup="subscribe"/>--%>
+                                <%--<input type="submit" class="btn" value="Subscribe" id="subscribe" name="sub"/>--%>
+                                <asp:Button ID="subscribe"  runat="server" Text="Subscribe" class="btn" 
+                                     ValidationGroup="subscribe" onclick="subscribe_Click"/>    
+                                <%--<button runat="server" ID="subscribe" class="btn" validationgroup="subscribe"  onclick="subscribe_Click">Subscribe</button>--%>
+                            </div>                          
+                          </div>
+                      </div>
+	            </div>
+
+            	
+	            <div class="widget middle">
+	             <div class="border-thin">&nbsp</div>
+		             <div class="cat"><h3><span class="dhead">Around The Site</span></h3></div>
+		             <div class="list">
+			            <dl>
+				            <dt><a class="hmail" href="Default.aspx">Home</a></dt>
+				            <dt><a class="hmail" href="about.aspx">About</a></dt>
+				            <dt><a class="hmail" href="gallery.aspx">Products</a></dt>
+				            <dt><a class="hmail" href="contact.aspx">Contact Us</a></dt>
+			            </dl>
+		            </div>
+                    <div class="social">
+                    <p class="socnew"><h4><span class="socheader">Follow Us</span></h4>
+        	            <div class="socialimage"> 
+                            <a href="https://www.facebook.com/pages/Orange-exim-Pvtltd/362893907126427">
+                            <img src="images/facebook-icon.png" alt="facebook"/></a>
+                            <a href="https://twitter.com/"><img src="images/twitter-icon.png" alt="twitter"/></a>
+                            <a href="http://in.linkedin.com/"><img src="images/linkedin.png" alt="linkedin"/></a>  
+                        </div>
+		            </p> 
+                    </div>
+	            </div>	   
+                </div>   
+              </div>
+        </div>
+        
+        <footer>
+        <div id="templatemo_footer_wrapper">    
+            <div id="templatemo_footer">
+                <p id="scroll">&copy;Copyright 2013 Orange Exim. All rights reserved.
+                This site best Viewed in Internet Explorer 10 or Above, Mozilla 2.0 or above  with screen
+                     resolution 1024x768 (DPI) or above.</p>	
+            </div>
+            <div id="templatemo_footer2">
+                <p id="scroll2">Designed And Developed by : Global Era Infotech Rajkot(India)
+                    The Site is with Cross browser compatible.<br/>
+                    <img src="images/compatibility.png" alt="compatibility"/>
+                </p>	
+            </div><!-- END of templatemo_footer -->
+        </div>
+        </footer>         
+        </div>    
+        </form>   
+</body>
+</html>

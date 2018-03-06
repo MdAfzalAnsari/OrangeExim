@@ -1,0 +1,338 @@
+﻿.loginform{background-color:#FD7B36;
+    border: 10px solid #664D00;
+    border-radius: 7px;    
+    margin: 8% auto 0;
+    width: 500px;}
+.loginhead{background-color: #C0C0C0;
+    border-bottom: 1px solid #7FFF00;
+    width: 100%;
+    }
+#sub_btn{
+border: 2px solid #664D00;
+}
+.logspan{text-align: center; color: #7D1900;font-size:small;}
+.logintable{width: 220px;margin:0 auto;padding:15px;}
+.Adminprofile{width: 500px;margin:0 auto;padding:15px;}
+span#emailfg,#Requiredanswer,#txtcaptchavalidate{
+float:left;
+}
+.Adminprofile td{color:Maroon; font-weight:900;text-align:right;width:106px; }
+textarea.area{color:Maroon; font-weight:800; background-color:#C0C0C0;resize:none;width:190px;}
+.Adminprofile input{background-color: #C0C0C0;color: #800000; margin-left: 11px; width: 190px;font-weight:900;}
+.logintable td{color:#4A4A4A;}
+.logintable input{border: 1px solid #664D00;color: #7D1900;font-size: 13px;}
+.products{width:100%;}
+span.prod_image{
+    box-shadow: 1px 1px 5px 5px #4A4A4A;
+    display: block;
+    height: 130px;
+    margin: 0 auto;
+    width: 130px;
+    float:left;
+    margin-left:30px;
+    border-radius:79px;
+    margin: 0px auto;
+}
+.prod_style{width:435px;margin:0 auto;}
+span.img1{
+    background-image:url(../images/addProducts.png);
+    background-repeat: no-repeat;
+    background-position: 21px center;
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+}
+span.img2{
+    background-image:url(../images/Setting.png);
+    background-position: 9px center;
+    background-repeat: no-repeat;
+    background-size: 105px auto;
+}
+span.img3{
+    background-image:url(../images/AddCategory.png);
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    background-size: 106px auto;
+    
+}
+span.img11{
+    background-image:url(../images/About_Us.png);
+    background-repeat: no-repeat;
+    background-position: -14px center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+span.img22{
+    background-image: url('../images/slider.png');
+    background-position: 2px center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+span.img33{
+    background-image:url(../images/Orange_Exim_Pvt_Ltd.png);
+    background-position:-13px center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    
+}
+.thumb{
+    background-image: url("../images/thumbs.png");   
+    background-repeat: no-repeat;
+    background-size: 316% 100%;
+}
+.youtube{
+    background-image: url("../images/youtube.png");
+    background-position: -36px;
+    background-repeat: no-repeat;
+    background-size: 166% 101%;
+}
+.aboutus{
+    background-image: url("../images/aboutus.png");
+    
+    background-repeat: no-repeat;
+    background-size: 254% auto;
+}
+.scroller{
+    background-image: url("../images/scroller.png");
+    background-position: -14px 1px;
+    background-repeat: no-repeat;
+    background-size: 320% 99%;
+}
+span.home_{
+    box-shadow: 1px 1px 5px 5px #4A4A4A;
+    display: block;
+    height: 130px;
+    margin: 0 auto;
+    width: 130px;
+    float:left;
+    margin-left:30px;
+    border-radius:8px;
+    margin: 0px auto;
+}
+
+.productretrive{
+    color: #800000;
+    display: block;
+    font-size: 13px;
+    font-weight: 900;    
+    word-wrap: break-word;
+}
+th.headtablemessage
+{
+    text-align:center;
+}
+span#Label4{
+    width:200px;
+    text-align:center;
+}
+.pro
+{
+    float:left;    
+    padding: 7px;
+}
+.prolink{
+    clear:both;
+    text-align:center;
+}
+a.plink{
+    color: #FF4500;
+    position: relative;
+    margin-left: 21px;
+    
+}
+a.edibtn{
+    color:#800000;
+}
+
+span.domestic{
+    background-image:url(../images/domestic.jpg);
+    background-position: 1px center;
+    background-repeat: no-repeat;
+    background-size: 129px auto;
+}
+span.industrial{
+    background-image:url(../images/industry.png);
+    background-position: 1px center;
+    background-repeat: no-repeat;
+    background-size: 129px auto;
+}
+span.appliances{
+    background-image:url(../images/Appliances.png);
+    background-position: 1px center;
+    background-repeat: no-repeat;
+    background-size: 129px auto;
+}
+span.parts{
+    background-image:url(../images/partss.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 105px auto;
+}
+.prod_categories{width:73%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+.addplink{
+    color: #FF4500;
+    margin-left: 40px;    
+    position: relative;
+    top: -24px;
+}
+.addprolink{
+    clear:both;
+    margin:0 auto;
+    width:75%;
+}
+
+a.parts{
+margin-left:80px;
+}
+
+.validatetext{
+margin:0 auto;
+width:250px;
+}
+.requireduser{
+display:block;
+font-weight:900;
+
+}
+.requiredpassword{
+display:block;
+font-weight:900;
+}
+
+.category_grid
+{
+background: radial-gradient(#FFF, #22BBF4) repeat scroll 0% 0% transparent;
+width: 500px;
+margin: -3px auto 0px;
+}
+
+img.grid_pro_image{
+    width:67px;
+    height:67px;
+    border-radius:13px;
+    border:2px solid #880000;
+}
+img.grid_slide_image{
+    width:180px;
+    height:67px;
+    border-radius:13px;
+    border:2px solid #880000;
+}
+.headtable{
+ color: #915F02;
+ text-align:left;
+ font-size:13px;
+}
+span.add_pro-head{
+    color:Maroon;
+    font-size:20px;
+    width:370px;
+}
+.procat{
+    background-color:#818181;
+}
+.aboutdescb
+{
+    color:#4a4a4a;
+}
+td.table {color:#800000;}
+input.table {color:#7D1900;}
+.btnupload{
+    font-family: "Courier New",Courier,monospace;
+    border-radius: 2px;
+    font-weight: 700;
+    color:Maroon;
+}
+.droplist{
+    color:Maroon;
+}
+.ChangePassword{
+    color: #F17171;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    height:23px;
+    background-color:Maroon;
+}
+.addpro{
+    margin-top:5px;
+    text-align:right;
+}
+.addpro a{
+    color:#4a4a4a;
+    font-size:15px;
+}
+.addpro a:hover{
+    color:#FF4500;
+    font-size:15px;
+}
+.about_style{
+    margin: 0px auto;
+    width:588px;
+}
+
+#aboutdetails  td
+{    
+    font-weight:900;
+    font-size:10px;
+}
+.update{
+    color: #800000;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+}
+.slide_style{
+    margin:0 auto;
+    width:900px;
+}
+span#statuslabel{
+    color:#800000;
+}
+.thumblink{
+    clear: both;
+    width: auto;
+    text-align: center;
+}
+.pathdiv{
+    margin-left: 50px;
+    font-size: 15px;
+    color: maroon;
+    font-weight: 900;
+    font-family:MS Outlook;
+    margin-top: -27px;
+    position: absolute;
+}
+input#chkview{  
+    content: "\2713";  
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
+    font-size: 15px;  
+    color: #f3f3f3;  
+    text-align: center;  
+    line-height: 15px;  
+    /*display: none;  */
+
+}  
+input#chkview:checked , label:before {  
+    content: "\2713";  
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
+    font-size: 15px;  
+    color: #f3f3f3;  
+    text-align: center;  
+    line-height: 15px;  
+}  
+label:before{
+    display: block;
+    width: 34px;
+    height: 20px;
+    cursor: pointer;    
+    z-index: 1;
+    background: #fcfff4;
+    background:linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    transition: all .4s ease ;
+    box-shadow:0px 2px 5px 0px rgba(0,0,0,0.3) ;
+  }

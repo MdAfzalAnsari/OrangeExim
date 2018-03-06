@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/NewOrange/global.asax" hash="ffffffffb26fdc83" filehash="ffffc595c7beac93" flags="150000" assembly="App_global.asax" type="ASP.global_asax">
+    <filedeps>
+        <filedep name="/NewOrange/global.asax" />
+    </filedeps>
+</preserve>

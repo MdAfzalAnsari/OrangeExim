@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Admin/Products.aspx" title="Home"  description="Home Page">
+        <siteMapNode url="Admin/Managecategory.aspx" title="category"  description="Category Page">
+            <siteMapNode url="Admin/Addcategory.aspx" title="Add Category"  description="Add Category Page"/>
+        </siteMapNode>
+        <siteMapNode url="Admin/ManageProducts.aspx" title="Products"  description="Product Page">
+            <siteMapNode url="Admin/AddProductDetails.aspx" title="add Products"  description="Add Product Page"/>
+        </siteMapNode>
+        <siteMapNode url="Admin/PageSetting.aspx" title="Page Setting"  description="Page Setting">
+            <siteMapNode url="Admin/ManageHome.aspx" title="manage Home Page"  description="Home Content">
+                <siteMapNode url="Admin/Youtubelink.aspx" title="manage YouTube Link"  description="Youtube Link"></siteMapNode>
+                <siteMapNode url="Admin/HomeThumbContent.aspx" title="Home Thumb content"  description="Thumb Content">
+                    <siteMapNode url="Admin/managethumbdetail.aspx" title="Thumb detail"  description="Thumb Content"></siteMapNode>
+                </siteMapNode>
+                <siteMapNode url="Admin/HomeAboutCompany.aspx" title="Home about company"  description="About Us Content"></siteMapNode>
+                <siteMapNode url="Admin/HomeFooterscroller.aspx" title="Home Footer scroller"  description="Footer Scroller Content">
+                    <siteMapNode url="Admin/scrollerimg.aspx" title="Scroller Detail"  description="Thumb Content"></siteMapNode>
+                </siteMapNode>
+            </siteMapNode>
+            <siteMapNode url="Admin/AboutPageSetting.aspx" title="about Us Page"  description="About Page">
+                <siteMapNode url="Admin/manageaboutpage.aspx" title="about Details"  description="About Page"></siteMapNode>
+            </siteMapNode>
+            <siteMapNode url="Admin/ManageSlides.aspx" title="manage Slides"  description="Slider Images">
+                <siteMapNode url="Admin/sliderImage.aspx" title="Slider Image Details"  description="About Page"></siteMapNode>
+                
+            </siteMapNode>
+            
+
+        </siteMapNode>
+        <siteMapNode url="Admin/ClientRequest.aspx" title="client Requests"  description="Request Page"></siteMapNode>
+        <siteMapNode url="Admin/Profile.aspx" title="Admin Profile"  description="Profile Page"></siteMapNode>
+        <siteMapNode url="Admin/ManageSubscription.aspx" title="NewsLetter"  description="NewsLetter Page"></siteMapNode>
+    </siteMapNode>
+</siteMap>
